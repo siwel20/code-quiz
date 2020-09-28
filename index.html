@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
+
+    <div class="row">
+        <div class="col-sm-6 text-left">High Score: <span id="highscore"></span></div>
+        <div class="col-sm-6 text-right">Timer:<span id="time"></span></div>
+    </div>
     
+    <div class="container">
+        <div id="start-div" >
+            <h1>Code Quiz</h1>
+            <p>Welcome the Code quiz. Let's see how much you know.</p>
+            <button id="start-btn">Start</button>
+        </div>
+
+        <div id="question-div" class="hide"> 
+            <h3 id="question">Question 1</h3>
+            <ol id="choices">
+
+            </ol>
+        </div>
+
+        <div id="input-score-div" class="hide">
+            Name Initial<input id="score" type="text">
+            <button id="initial-btn">Save</button>
+        </div>
+
+        <div id="view-score" class="hide">
+            <p id="view-high-score"></p>
+            <button id="go-back-btn">Go Back</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
